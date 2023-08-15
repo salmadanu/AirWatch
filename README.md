@@ -2,9 +2,7 @@
 ![Bismillah Aja Dulu -](https://github.com/salmadanu/AirWatch/assets/92136661/fa727815-528d-4e2d-85e3-becd8bf94c4a)
 
 
-AirWatch adalah aplikasi berbasis web untuk memantau kualitas udara yang berada di pabrik industri.
-
-![3](https://github.com/salmadanu/AirWatch/assets/92136661/d38b23e8-4835-4cb3-af15-1d4b9cc9ccc4)
+### AirWatch adalah aplikasi berbasis web untuk memantau kualitas udara yang berada di pabrik industri.
 
 ## Tujuan
 
@@ -27,6 +25,9 @@ AirWatch adalah aplikasi berbasis web untuk memantau kualitas udara yang berada 
 - Request
 - Warning Notification
 - Setting
+
+![3](https://github.com/salmadanu/AirWatch/assets/92136661/d38b23e8-4835-4cb3-af15-1d4b9cc9ccc4)
+
 
 ## Technical Features AirWatch
 
