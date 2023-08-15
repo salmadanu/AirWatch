@@ -4,6 +4,8 @@
 
 AirWatch adalah aplikasi berbasis web untuk memantau kualitas udara yang berada di pabrik industri.
 
+![3](https://github.com/salmadanu/AirWatch/assets/92136661/d38b23e8-4835-4cb3-af15-1d4b9cc9ccc4)
+
 ## Tujuan
 
 - Menjadi aplikasi pemberi informasi kualitas udara yang dihasilkan pabrik secara real-time.
