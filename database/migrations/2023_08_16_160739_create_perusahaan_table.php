@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('username_perusahaan');
             $table->string('password_perusahaan');
             $table->text('alamat_perusahaan');
-            $table->binary('logo_perusahaan');
+            $table->binary('logo_perusahaan')->nullable();
             $table->string('nomor_telfon_perusahaan');
             $table->integer('jumlah_pabrik');
             $table->string('provinsi_perusahaan');

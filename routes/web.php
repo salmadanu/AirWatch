@@ -25,3 +25,12 @@ Route::get('/test-database-connection', function () {
         return "Database connection failed: " . $e->getMessage();
     }
 });
+
+Route::get('/rank', function () {
+    return view('rank');
+});
+
+Route::get('/login', function () {
+    return view('login');
+});
+

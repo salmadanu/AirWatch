@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('ukuran_kualitas_udara', function (Blueprint $table) {
             $table->foreignId('id_pabrik');
+            $table->timestamps();
             $table->integer('aqi');
             $table->integer('so2');
             $table->integer('co');
