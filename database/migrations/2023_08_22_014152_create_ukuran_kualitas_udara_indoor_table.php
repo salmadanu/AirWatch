@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ukuran_kualitas_udara', function (Blueprint $table) {
+        Schema::create('ukuran_kualitas_udara_indoor', function (Blueprint $table) {
             $table->foreignId('id_pabrik');
             $table->timestamps();
             $table->integer('aqi');
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ukuran_kualitas_udara');
+        Schema::dropIfExists('ukuran_kualitas_udara_indoor');
     }
 };
