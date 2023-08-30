@@ -31,6 +31,9 @@ Route::get('/rank', function () {
 });
 
 Route::get('/login', function () {
-    return view('login');
+    return view('login-user');
 });
 
+Route::get('/register', function () {
+    return view('register-user');
+});
