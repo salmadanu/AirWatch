@@ -1,0 +1,65 @@
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Jua:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root{
+    --logo-font: 'Jua';
+    --body-font: 'Poppins';
+}
+
+.logo{
+    font-family: var(--logo-font);
+    color: rgba(0, 110, 117, 1);
+    font-size: large;
+}
+
+.navbar{
+    background-color: rgba(217, 217, 217, 1);
+}
+
+.nav__icon{
+    color: rgba(0, 110, 117, 1);   
+}
+
+.nav__text{
+    color: rgba(54, 54, 54, 1);
+    font-weight: bold;
+    font-family: var(--body-font);
+}
+
+.profil__pict{
+    /* vertical-align: middle; */
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.vertical__line{
+    box-sizing: border-box;
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    width: 2px;
+    height: 150px;
+    background-color: rgba(191, 191, 191, 1);
+}
+
+.vertical__line_kecil{
+    padding: 0;
+    width: 1.5px;
+    height: 45px;
+    background-color: rgba(191, 191, 191, 1);
+}
+
+.btn__primary{
+    color: white;
+    background-color: rgba(0, 110, 117, 1);
+}
+.btn__secondary{
+    color: rgba(0, 110, 117, 1);
+    border: 2px solid rgba(0, 110, 117, 1);
+}
+
+.btn__secondary.clicked{
+    color: white;
+    background-color: rgba(0, 110, 117, 1);
+}

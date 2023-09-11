@@ -78,7 +78,8 @@ class DatabaseSeeder extends Seeder
             'no2' => 4,
             'o3' => 40,
             'pm25' => 3.0,
-            'pm10' => 10.0
+            'pm10' => 10.0,
+            'created_at' => '2023-09-01 00:00:00',
         ]);
 
     }

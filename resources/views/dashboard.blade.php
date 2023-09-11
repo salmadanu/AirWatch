@@ -182,5 +182,102 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    {{-- Chart JS Script --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+  
+<!-- HTML elements for chart containers -->
+<div id="chart-container-aqi">
+  <canvas id="aqi-chart" width="400" height="200"></canvas>
+</div>
+
+<div id="chart-container-so2">
+  <canvas id="so2-chart" width="400" height="200"></canvas>
+</div>
+
+<!-- Add containers for other parameters with similar structure -->
+<div id="chart-container-co">
+  <canvas id="co-chart" width="400" height="200"></canvas>
+</div>
+
+<div id="chart-container-no2">
+  <canvas id="no2-chart" width="400" height="200"></canvas>
+</div>
+
+<div id="chart-container-o3">
+  <canvas id="o3-chart" width="400" height="200"></canvas>
+</div>
+
+<div id="chart-container-pm25">
+  <canvas id="pm25-chart" width="400" height="200"></canvas>
+</div>
+
+<div id="chart-container-pm10">
+  <canvas id="pm10-chart" width="400" height="200"></canvas>
+</div>
+
+
+{{-- <!-- Add containers for other parameters with similar structure -->
+
+</div>
+
+<script>
+  function showChart(chartId) {
+  // Hide all chart containers
+  document.querySelectorAll('.chart-container canvas').forEach(function(container) {
+    container.style.display = 'none';
+  });
+
+  // Show the selected chart container
+  document.getElementById(`chart-container-${chartId}`).style.display = 'block';
+
+  // Update the chart when showing
+  if (chartId === 'aqi-chart') {
+    updateChart('aqi-chart', {!! json_encode($aqiData) !!});
+  } else if (chartId === 'so2-chart') {
+    updateChart('so2-chart', {!! json_encode($so2Data) !!});
+  }
+  // Add similar conditions for other parameters
+}
+
+  // Function to update the chart
+  function updateChart(chartId, data) {
+      var ctx = document.getElementById(chartId).getContext('2d');
+      new Chart(ctx, {
+          type: 'line',
+          data: {
+              labels: [...Array(data.length).keys()], // Hours
+              datasets: [{
+                  label: chartId,
+                  data: data, // Air quality levels
+                  borderColor: 'rgba(75, 192, 192, 1)',
+                  borderWidth: 1,
+                  fill: false,
+              }]
+          },
+          options: {
+              scales: {
+                  x: {
+                      title: {
+                          display: true,
+                          text: 'Air Quality Level'
+                      }
+                  },
+                  y: {
+                      title: {
+                          display: true,
+                          text: 'Hours'
+                      }
+                  }
+              }
+          }
+      });
+  }
+
+  // Initially show the AQI chart
+  showChart('aqi-chart');
+</script> --}}
+
+
+
   </body>
 </html>
